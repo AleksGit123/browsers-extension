@@ -1,0 +1,10 @@
+@media(max-width:1080px) {
+    .main_tag {
+        padding: 30px;
+    }
+
+    .ext_sections {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
