@@ -90,7 +90,6 @@ active.addEventListener("click",() =>{
   
 })
 
-
 inactive.addEventListener("click",()=>{
     
     extensions.forEach((element,index)=>{
