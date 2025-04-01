@@ -37,6 +37,10 @@ body {
 
 }
 
+.dark_mode .theme_change_button{
+    border: 1px solid #1f2535;
+}
+
 .main_tag {
     width: min(100%, 1440px);
     margin: auto;
@@ -77,7 +81,7 @@ body {
     height: 50px;
     cursor: pointer;
     transition: .4s;
-    border: 1px solid #1f2535;
+   
 }
 
 .theme_change_button:hover {
