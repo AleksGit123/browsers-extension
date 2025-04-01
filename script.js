@@ -17,7 +17,7 @@ themeChange.addEventListener("click",()=>{
         console.log(true);
         // document.body.classList.add("dark_mode");
         func(document.body,"dark_mode","add");
-        
+        bgColor("#3A3A3A","#3A3A3A","#3A3A3A")
         // icon switch
         moon.style.display = "none";
         sun.style.display = "block";
@@ -27,6 +27,7 @@ themeChange.addEventListener("click",()=>{
     else{
         console.log(false);
         // document.body.classList.remove("dark_mode");
+        bgColor("#FFFFFF","#FFFFFF","#FFFFFF")
         func(document.body,"dark_mode","remove");
         sun.style.display = "none";
         moon.style.display = "block";
@@ -88,7 +89,12 @@ all.addEventListener("click",()=>{
     // all.style.backgroundColor = "#D92626";
     // active.style.backgroundColor = "#FFFFFF";
     // inactive.style.backgroundColor = "#FFFFFF";
-    bgColor("#D92626","#FFFFFF","#FFFFFF")
+    if(document.body.classList.contains("dark_mode")){
+        bgColor("#D92626","#3A3A3A","#3A3A3A");
+    }
+    else{
+        bgColor("#D92626","#FFFFFF","#FFFFFF");
+    }
     
     extensions.forEach(tag =>{
         // element.classList.remove("hide");
@@ -100,7 +106,14 @@ active.addEventListener("click",() =>{
     // all.style.backgroundColor = "#FFFFFF";
     // active.style.backgroundColor = "#D92626";
     // inactive.style.backgroundColor = "#FFFFFF";
-    bgColor("#FFFFFF","#D92626","#FFFFFF")
+    // bgColor("#FFFFFF","#D92626","#FFFFFF")
+    if(document.body.classList.contains("dark_mode")){
+        bgColor("#3A3A3A","#D92626","#3A3A3A");
+    }
+    else{
+        bgColor("#FFFFFF","#D92626","#FFFFFF");
+    }
+    
 
     console.log(activeToggles)
     extensions.forEach((element,index)=>{
@@ -132,7 +145,12 @@ inactive.addEventListener("click",()=>{
     // all.style.backgroundColor = "#FFFFFF";
     // active.style.backgroundColor = "#FFFFFF";
     // inactive.style.backgroundColor = "#D92626";
-    bgColor("#FFFFFF","#FFFFFF","#D92626")
+    if(document.body.classList.contains("dark_mode")){
+        bgColor("#3A3A3A","#3A3A3A","#D92626");
+    }
+    else{
+        bgColor("#FFFFFF","#FFFFFF","#D92626");
+    }
     
 })
 

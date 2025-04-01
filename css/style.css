@@ -33,11 +33,11 @@ body {
 }
 
 .dark_mode .remove:hover {
-    box-shadow: 0 5px 4px -2px #FFFFFF;
+    box-shadow: 0 5px 6px -2px #FFFFFF;
 
 }
 
-.dark_mode .theme_change_button{
+.dark_mode .theme_change_button {
     border: 1px solid #1f2535;
 }
 
@@ -81,7 +81,7 @@ body {
     height: 50px;
     cursor: pointer;
     transition: .4s;
-   
+
 }
 
 .theme_change_button:hover {
@@ -226,7 +226,7 @@ body {
 
 .remove:hover {
     transform: translateY(-5px);
-    box-shadow: 0 7px 4px -2px #353541;
+    box-shadow: 0 7px 6px -2px #353541;
     border: 1px solid #D92626;
 }
 
